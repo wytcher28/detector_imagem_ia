@@ -1,16 +1,17 @@
-# Detector de Imagens Geradas por IA
+# Detector de Imagens Geradas por IA 🧠📷
 
-Este projeto utiliza aprendizado de máquina para identificar se uma imagem foi gerada por inteligência artificial ou é uma fotografia real.
+Este projeto treina um modelo simples de classificação para distinguir imagens reais de imagens geradas por inteligência artificial, utilizando histogramas LBP.
+
+## Estrutura
+
+- `imagens_reais/`: Coloque aqui suas imagens reais.
+- `imagens_ia/`: Coloque aqui imagens geradas por IA.
+- `detector.py`: Código principal para treinar o modelo.
+- `modelo_sem_opencv.pkl`: Modelo salvo após o treinamento.
 
 ## Como usar
 
-1. Coloque imagens reais na pasta `imagens_reais/`.
-2. Coloque imagens geradas por IA na pasta `imagens_ia/`.
-3. Execute o script com `python detector.py` para treinar.
-4. Use a função `verificar_imagem()` para verificar uma nova imagem.
-
-## Dependências
-
-- numpy
-- scikit-learn
-- scikit-image
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/detector_imagem_ia.git
+   cd detector_imagem_ia
